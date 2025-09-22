@@ -18,6 +18,8 @@
 "stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.o"
 "stm32f103c8t6_balance-car\stm32f1xx_hal_exti.o"
 "stm32f103c8t6_balance-car\system_stm32f1xx.o"
+"stm32f103c8t6_balance-car\oled_hal.o"
+"stm32f103c8t6_balance-car\sys.o"
 --strict --scatter "STM32F103C8T6_Balance-Car\STM32F103C8T6_Balance-Car.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
