@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"stm32f103c8t6_balance-car\startup_stm32f103xb.o"
+"stm32f103c8t6_balance-car\main.o"
+"stm32f103c8t6_balance-car\gpio.o"
+"stm32f103c8t6_balance-car\spi.o"
+"stm32f103c8t6_balance-car\stm32f1xx_it.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_msp.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_spi.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_dma.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_flash.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.o"
+"stm32f103c8t6_balance-car\stm32f1xx_hal_exti.o"
+"stm32f103c8t6_balance-car\system_stm32f1xx.o"
+--strict --scatter "STM32F103C8T6_Balance-Car\STM32F103C8T6_Balance-Car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32F103C8T6_Balance-Car.map" -o STM32F103C8T6_Balance-Car\STM32F103C8T6_Balance-Car.axf
