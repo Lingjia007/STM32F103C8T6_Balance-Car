@@ -25,3 +25,4 @@ stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Drive
 stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h

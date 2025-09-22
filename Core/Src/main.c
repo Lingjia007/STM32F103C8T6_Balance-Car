@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "spi.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -88,6 +89,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   OLED_HAL_Init(); // 初始化OLED
   OLED_HAL_Clear();
@@ -105,6 +107,7 @@ int main(void)
     OLED_HAL_ShowString(0, 20, (uint8_t *)"GHI", 16, 1); // 8*16 “ABC”
     OLED_HAL_ShowString(0, 36, (uint8_t *)"JKL", 24, 1); // 12*24 “ABC”
     OLED_HAL_Refresh();
+    printf("OLED_HAL_ShowString\r\n");
     HAL_Delay(500);
   }
   /* USER CODE END 3 */

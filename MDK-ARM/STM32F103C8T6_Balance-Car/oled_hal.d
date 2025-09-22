@@ -26,5 +26,6 @@ stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 stm32f103c8t6_balance-car\oled_hal.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\oledfont.h
