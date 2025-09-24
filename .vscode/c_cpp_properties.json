@@ -14,7 +14,10 @@
                 "Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                 "Drivers/CMSIS/Include",
                 "Hardware",
-                "System"
+                "System",
+                "Balance/MPU6050",
+                "Hardware/OLED",
+                "Hardware/IIC"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

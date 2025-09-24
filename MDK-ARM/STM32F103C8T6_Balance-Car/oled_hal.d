@@ -1,5 +1,5 @@
-stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\oled_hal.c
-stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\OLED_HAL.h
+stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\OLED\oled_hal.c
+stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\OLED\OLED_HAL.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Core/Inc/stm32f1xx_hal_conf.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -28,4 +28,4 @@ stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 stm32f103c8t6_balance-car\oled_hal.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 stm32f103c8t6_balance-car\oled_hal.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
-stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\oledfont.h
+stm32f103c8t6_balance-car\oled_hal.o: ..\Hardware\OLED\oledfont.h

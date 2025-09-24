@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        "*.c": "c",
+        "DataScope_DP.C": "cpp",
+        "mpu6050.h": "c"
+    }
+}

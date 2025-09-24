@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Hardware;../System</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Hardware;../System;..\Balance\MPU6050;..\Hardware\OLED;..\Hardware\IIC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -614,7 +614,12 @@
             <File>
               <FileName>oled_hal.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Hardware\oled_hal.c</FilePath>
+              <FilePath>..\Hardware\OLED\oled_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>ioi2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\IIC\ioi2c.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -625,6 +630,41 @@
               <FileName>sys.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\System\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\System\delay.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Control</GroupName>
+          <Files>
+            <File>
+              <FileName>DataScope_DP.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Balance\MPU6050\DataScope_DP.C</FilePath>
+            </File>
+            <File>
+              <FileName>filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Balance\MPU6050\filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>inv_mpu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Balance\MPU6050\inv_mpu.c</FilePath>
+            </File>
+            <File>
+              <FileName>inv_mpu_dmp_motion_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Balance\MPU6050\inv_mpu_dmp_motion_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Balance\MPU6050\MPU6050.c</FilePath>
             </File>
           </Files>
         </Group>
