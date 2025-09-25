@@ -372,5 +372,5 @@ void MPU6050_InitGyro_Offset(void); // ³õÊ¼»¯ÍÓÂİÒÇÆ«ÖÃ
 void DMP_Init(void);
 void Read_DMP(void);
 float Read_Temperature(void);
-void Get_Angle(u8 way);
+// void Get_Angle(u8 way);
 #endif

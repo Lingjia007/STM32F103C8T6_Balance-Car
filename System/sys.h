@@ -114,6 +114,7 @@ extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd;
 // void MSR_MSP(u32 addr);	//…Ë÷√∂—’ªµÿ÷∑
 
 #include "main.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "delay.h"
@@ -126,6 +127,8 @@ extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd;
 #include "ioi2c.h"
 #include "dmpKey.h"
 #include "dmpmap.h"
+#include "encoder.h"
+#include "control.h"
 #include <math.h>
 #include <string.h>
 #include <stdio.h>

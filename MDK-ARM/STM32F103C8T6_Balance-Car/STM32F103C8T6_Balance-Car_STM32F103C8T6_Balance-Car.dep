@@ -1,10 +1,10 @@
 Dependencies for Project 'STM32F103C8T6_Balance-Car', Target 'STM32F103C8T6_Balance-Car': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
-F (startup_stm32f103xb.s)(0x68D3B133)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o stm32f103c8t6_balance-car\startup_stm32f103xb.o --depend stm32f103c8t6_balance-car\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x68D3E4BE)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\main.o --omf_browse stm32f103c8t6_balance-car\main.crf --depend stm32f103c8t6_balance-car\main.d)
-I (../Core/Inc/main.h)(0x68D3B131)
+F (startup_stm32f103xb.s)(0x68D544D9)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o stm32f103c8t6_balance-car\startup_stm32f103xb.o --depend stm32f103c8t6_balance-car\startup_stm32f103xb.d)
+F (../Core/Src/main.c)(0x68D544D9)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\main.o --omf_browse stm32f103c8t6_balance-car\main.crf --depend stm32f103c8t6_balance-car\main.d)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -28,30 +28,35 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
 I (../Core/Inc/spi.h)(0x68D11450)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
-I (../System/sys.h)(0x68D3BE99)
+I (../System/sys.h)(0x68D53E21)
 I (../System/delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (../Core/Src/gpio.c)(0x68D3B12F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\gpio.o --omf_browse stm32f103c8t6_balance-car\gpio.crf --depend stm32f103c8t6_balance-car\gpio.d)
+F (../Core/Src/gpio.c)(0x68D53D17)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\gpio.o --omf_browse stm32f103c8t6_balance-car\gpio.crf --depend stm32f103c8t6_balance-car\gpio.d)
 I (../Core/Inc/gpio.h)(0x68D11450)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -75,12 +80,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Core/Src/spi.c)(0x68D11450)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\spi.o --omf_browse stm32f103c8t6_balance-car\spi.crf --depend stm32f103c8t6_balance-car\spi.d)
+F (../Core/Src/spi.c)(0x68D11450)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\spi.o --omf_browse stm32f103c8t6_balance-car\spi.crf --depend stm32f103c8t6_balance-car\spi.d)
 I (../Core/Inc/spi.h)(0x68D11450)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -104,12 +111,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Core/Src/usart.c)(0x68D3B130)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\usart.o --omf_browse stm32f103c8t6_balance-car\usart.crf --depend stm32f103c8t6_balance-car\usart.d)
-I (../Core/Inc/usart.h)(0x68D3B130)
-I (../Core/Inc/main.h)(0x68D3B131)
+F (../Core/Src/tim.c)(0x68D53D18)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\tim.o --omf_browse stm32f103c8t6_balance-car\tim.crf --depend stm32f103c8t6_balance-car\tim.d)
+I (../Core/Inc/tim.h)(0x68D544D8)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -133,12 +142,45 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
+F (../Core/Src/usart.c)(0x68D53A84)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\usart.o --omf_browse stm32f103c8t6_balance-car\usart.crf --depend stm32f103c8t6_balance-car\usart.d)
+I (../Core/Inc/usart.h)(0x68D3B130)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
-F (../Core/Src/stm32f1xx_it.c)(0x68D11F8D)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_it.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_it.crf --depend stm32f103c8t6_balance-car\stm32f1xx_it.d)
-I (../Core/Inc/main.h)(0x68D3B131)
+F (../Core/Src/stm32f1xx_it.c)(0x68D53D19)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_it.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_it.crf --depend stm32f103c8t6_balance-car\stm32f1xx_it.d)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -162,12 +204,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_it.h)(0x68D11F8D)
-F (../Core/Src/stm32f1xx_hal_msp.c)(0x68D11450)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_msp.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_msp.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/stm32f1xx_it.h)(0x68D53D19)
+F (../Core/Src/stm32f1xx_hal_msp.c)(0x68D53A85)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_msp.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_msp.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x68D53A85)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -191,10 +235,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -218,10 +264,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_spi.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_spi.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_spi.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_spi.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_spi.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_spi.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -245,10 +293,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -272,10 +322,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_rcc.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -299,10 +351,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_rcc_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -326,10 +380,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_gpio.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -353,10 +409,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_dma.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_dma.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_dma.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_dma.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_dma.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_dma.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -380,10 +438,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_cortex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -407,10 +467,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_pwr.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -434,10 +496,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_flash.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_flash.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_flash.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_flash.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_flash.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_flash.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -461,10 +525,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_flash_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -488,10 +554,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_exti.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_exti.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_exti.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_exti.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_exti.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_exti.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -515,10 +583,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_uart.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_uart.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_uart.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_tim.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_tim.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_tim.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -542,8 +612,68 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (../Core/Src/system_stm32f1xx.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\system_stm32f1xx.o --omf_browse stm32f103c8t6_balance-car\system_stm32f1xx.crf --depend stm32f103c8t6_balance-car\system_stm32f1xx.d)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_tim_ex.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_tim_ex.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_tim_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\stm32f1xx_hal_uart.o --omf_browse stm32f103c8t6_balance-car\stm32f1xx_hal_uart.crf --depend stm32f103c8t6_balance-car\stm32f1xx_hal_uart.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
+F (../Core/Src/system_stm32f1xx.c)(0x68D112B6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\system_stm32f1xx.o --omf_browse stm32f103c8t6_balance-car\system_stm32f1xx.crf --depend stm32f103c8t6_balance-car\system_stm32f1xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -553,7 +683,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -569,11 +699,13 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-F (..\Hardware\OLED\oled_hal.c)(0x68D11708)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\oled_hal.o --omf_browse stm32f103c8t6_balance-car\oled_hal.crf --depend stm32f103c8t6_balance-car\oled_hal.d)
+F (..\Hardware\OLED\oled_hal.c)(0x68D11708)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\oled_hal.o --omf_browse stm32f103c8t6_balance-car\oled_hal.crf --depend stm32f103c8t6_balance-car\oled_hal.d)
 I (..\Hardware\OLED\OLED_HAL.h)(0x68D11B9B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
@@ -597,12 +729,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
 I (..\Hardware\OLED\oledfont.h)(0x5E14019B)
-F (..\Hardware\IIC\ioi2c.c)(0x6183D2A6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\ioi2c.o --omf_browse stm32f103c8t6_balance-car\ioi2c.crf --depend stm32f103c8t6_balance-car\ioi2c.d)
+F (..\Hardware\IIC\ioi2c.c)(0x6183D2A6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\ioi2c.o --omf_browse stm32f103c8t6_balance-car\ioi2c.crf --depend stm32f103c8t6_balance-car\ioi2c.d)
 I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (../System/sys.h)(0x68D3BE99)
+I (../System/sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -612,7 +746,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -628,25 +762,32 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
 I (../System/delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (..\System\sys.c)(0x68D118F5)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\sys.o --omf_browse stm32f103c8t6_balance-car\sys.crf --depend stm32f103c8t6_balance-car\sys.d)
-I (..\System\sys.h)(0x68D3BE99)
+F (..\Hardware\ENCODER\encoder.c)(0x658E73ED)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\encoder.o --omf_browse stm32f103c8t6_balance-car\encoder.crf --depend stm32f103c8t6_balance-car\encoder.d)
+I (..\Hardware\ENCODER\encoder.h)(0x63B773E4)
+I (../System/sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -656,7 +797,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -672,27 +813,82 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
+I (../Core/Inc/usart.h)(0x68D3B130)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (../Core/Inc/gpio.h)(0x68D11450)
+I (../System/delay.h)(0x6708BF50)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+F (..\System\sys.c)(0x68D118F5)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\sys.o --omf_browse stm32f103c8t6_balance-car\sys.crf --depend stm32f103c8t6_balance-car\sys.d)
+I (..\System\sys.h)(0x68D53E21)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
 I (..\System\delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (..\System\delay.c)(0x6708BF5E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\delay.o --omf_browse stm32f103c8t6_balance-car\delay.crf --depend stm32f103c8t6_balance-car\delay.d)
+F (..\System\delay.c)(0x6708BF5E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\delay.o --omf_browse stm32f103c8t6_balance-car\delay.crf --depend stm32f103c8t6_balance-car\delay.d)
 I (..\System\delay.h)(0x6708BF50)
-I (..\System\sys.h)(0x68D3BE99)
+I (..\System\sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -702,7 +898,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -718,30 +914,35 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (../System/sys.h)(0x68D3BE99)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../System/sys.h)(0x68D53E21)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (..\Balance\MPU6050\DataScope_DP.C)(0x61832BD6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\datascope_dp.o --omf_browse stm32f103c8t6_balance-car\datascope_dp.crf --depend stm32f103c8t6_balance-car\datascope_dp.d)
+F (..\Balance\MPU6050\DataScope_DP.C)(0x61832BD6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\datascope_dp.o --omf_browse stm32f103c8t6_balance-car\datascope_dp.crf --depend stm32f103c8t6_balance-car\datascope_dp.d)
 I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-F (..\Balance\MPU6050\filter.c)(0x68D3B5DB)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\filter.o --omf_browse stm32f103c8t6_balance-car\filter.crf --depend stm32f103c8t6_balance-car\filter.d)
+F (..\Balance\MPU6050\filter.c)(0x68D3B5DB)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\filter.o --omf_browse stm32f103c8t6_balance-car\filter.crf --depend stm32f103c8t6_balance-car\filter.d)
 I (..\Balance\MPU6050\filter.h)(0x6183D284)
-F (..\Balance\MPU6050\inv_mpu.c)(0x60991E10)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\inv_mpu.o --omf_browse stm32f103c8t6_balance-car\inv_mpu.crf --depend stm32f103c8t6_balance-car\inv_mpu.d)
-I (../System/sys.h)(0x68D3BE99)
+F (..\Balance\MPU6050\inv_mpu.c)(0x60991E10)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\inv_mpu.o --omf_browse stm32f103c8t6_balance-car\inv_mpu.crf --depend stm32f103c8t6_balance-car\inv_mpu.d)
+I (../System/sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -751,7 +952,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -767,26 +968,31 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
 I (../System/delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.c)(0x60991E10)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o --omf_browse stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.crf --depend stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.d)
-I (../System/sys.h)(0x68D3BE99)
+F (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.c)(0x60991E10)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o --omf_browse stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.crf --depend stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.d)
+I (../System/sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -796,7 +1002,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -812,27 +1018,32 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
 I (../System/delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Balance\MPU6050\mpu6050.h)(0x68D3BE76)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
-F (..\Balance\MPU6050\MPU6050.c)(0x68D3BF2F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ..\Balance\MPU6050 -I ..\Hardware\OLED -I ..\Hardware\IIC-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\mpu6050.o --omf_browse stm32f103c8t6_balance-car\mpu6050.crf --depend stm32f103c8t6_balance-car\mpu6050.d)
-I (..\Balance\MPU6050\MPU6050.h)(0x68D3BE76)
-I (../System/sys.h)(0x68D3BE99)
+F (..\Balance\MPU6050\MPU6050.c)(0x68D53DDD)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\mpu6050.o --omf_browse stm32f103c8t6_balance-car\mpu6050.crf --depend stm32f103c8t6_balance-car\mpu6050.d)
+I (..\Balance\MPU6050\MPU6050.h)(0x68D53DE5)
+I (../System/sys.h)(0x68D53E21)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
@@ -842,7 +1053,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D11F8D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
@@ -858,20 +1069,77 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
-I (../Core/Inc/main.h)(0x68D3B131)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
 I (../Core/Inc/usart.h)(0x68D3B130)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (../Core/Inc/gpio.h)(0x68D11450)
 I (../System/delay.h)(0x6708BF50)
-I (..\Hardware\OLED\oled_hal.h)(0x68D11B9B)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
-I (..\Balance\MPU6050\DataScope_DP.h)(0x559E0F24)
-I (..\Balance\MPU6050\filter.h)(0x6183D284)
-I (..\Balance\MPU6050\inv_mpu.h)(0x559E0F24)
-I (..\Balance\MPU6050\inv_mpu_dmp_motion_driver.h)(0x559E0F24)
-I (..\Hardware\IIC\ioi2c.h)(0x6183D2A4)
-I (..\Balance\MPU6050\dmpKey.h)(0x50CA9A0C)
-I (..\Balance\MPU6050\dmpmap.h)(0x50CA9A0C)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+F (..\Balance\CONTROL\control.c)(0x68D5436C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../System -I ../Balance/MPU6050 -I ../Hardware/OLED -I ../Hardware/IIC -I ../Hardware/ENCODER -I ../Balance/CONTROL-I.\RTE\_STM32F103C8T6_Balance-Car-IC:\Users\31254\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\31254\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o stm32f103c8t6_balance-car\control.o --omf_browse stm32f103c8t6_balance-car\control.crf --depend stm32f103c8t6_balance-car\control.d)
+I (..\Balance\CONTROL\control.h)(0x68D53E71)
+I (../System/sys.h)(0x68D53E21)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x68D112B6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x68D112B6)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x68D112AC)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68D112AC)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68D112AC)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68D112B6)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x68D53D19)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68D112B6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68D112B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68D112B6)
+I (../Core/Inc/main.h)(0x68D53A85)
+I (../Core/Inc/tim.h)(0x68D544D8)
+I (../Core/Inc/usart.h)(0x68D3B130)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (../Core/Inc/gpio.h)(0x68D11450)
+I (../System/delay.h)(0x6708BF50)
+I (../Hardware/OLED/oled_hal.h)(0x68D11B9B)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdlib.h)(0x5E8E3CC2)
+I (../Balance/MPU6050/DataScope_DP.h)(0x559E0F24)
+I (../Balance/MPU6050/filter.h)(0x6183D284)
+I (../Balance/MPU6050/inv_mpu.h)(0x559E0F24)
+I (../Balance/MPU6050/inv_mpu_dmp_motion_driver.h)(0x559E0F24)
+I (../Balance/MPU6050/mpu6050.h)(0x68D53DE5)
+I (../Hardware/IIC/ioi2c.h)(0x6183D2A4)
+I (../Balance/MPU6050/dmpKey.h)(0x50CA9A0C)
+I (../Balance/MPU6050/dmpmap.h)(0x50CA9A0C)
+I (../Hardware/ENCODER/encoder.h)(0x63B773E4)
+I (../Balance/CONTROL/control.h)(0x68D53E71)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\math.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)

@@ -59,6 +59,7 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define MPU6050_EXTI_Pin GPIO_PIN_12
 #define MPU6050_EXTI_GPIO_Port GPIOA
+#define MPU6050_EXTI_EXTI_IRQn EXTI15_10_IRQn
 
 /* USER CODE BEGIN Private defines */
 

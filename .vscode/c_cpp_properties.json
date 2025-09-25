@@ -17,7 +17,9 @@
                 "System",
                 "Balance/MPU6050",
                 "Hardware/OLED",
-                "Hardware/IIC"
+                "Hardware/IIC",
+                "Hardware/ENCODER",
+                "Balance/CONTROL"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
