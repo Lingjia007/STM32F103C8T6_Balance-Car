@@ -32,10 +32,10 @@ stm32f103c8t6_balance-car\inv_mpu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1
 stm32f103c8t6_balance-car\inv_mpu.o: ../Core/Inc/main.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Core/Inc/tim.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Core/Inc/usart.h
+stm32f103c8t6_balance-car\inv_mpu.o: ../System/sys.h
 stm32f103c8t6_balance-car\inv_mpu.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Core/Inc/gpio.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../System/delay.h
-stm32f103c8t6_balance-car\inv_mpu.o: ../System/sys.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Hardware/OLED/oled_hal.h
 stm32f103c8t6_balance-car\inv_mpu.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Balance/MPU6050/DataScope_DP.h
@@ -48,5 +48,6 @@ stm32f103c8t6_balance-car\inv_mpu.o: ../Balance/MPU6050/dmpKey.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Balance/MPU6050/dmpmap.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Hardware/ENCODER/encoder.h
 stm32f103c8t6_balance-car\inv_mpu.o: ../Balance/CONTROL/control.h
+stm32f103c8t6_balance-car\inv_mpu.o: ..\Hardware\BSTP\usart3.h
 stm32f103c8t6_balance-car\inv_mpu.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 stm32f103c8t6_balance-car\inv_mpu.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

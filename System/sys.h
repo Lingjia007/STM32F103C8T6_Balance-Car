@@ -129,6 +129,7 @@ extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd;
 #include "dmpmap.h"
 #include "encoder.h"
 #include "control.h"
+#include "usart3.h"
 #include <math.h>
 #include <string.h>
 #include <stdio.h>

@@ -19,7 +19,8 @@
                 "Hardware/OLED",
                 "Hardware/IIC",
                 "Hardware/ENCODER",
-                "Balance/CONTROL"
+                "Balance/CONTROL",
+                "Hardware/BSTP"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
