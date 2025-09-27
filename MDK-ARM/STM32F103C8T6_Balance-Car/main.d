@@ -22,6 +22,8 @@ stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
@@ -29,6 +31,7 @@ stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 stm32f103c8t6_balance-car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+stm32f103c8t6_balance-car\main.o: ../Core/Inc/adc.h
 stm32f103c8t6_balance-car\main.o: ../Core/Inc/spi.h
 stm32f103c8t6_balance-car\main.o: ../Core/Inc/tim.h
 stm32f103c8t6_balance-car\main.o: ../Core/Inc/usart.h
@@ -49,7 +52,7 @@ stm32f103c8t6_balance-car\main.o: ../Balance/MPU6050/dmpKey.h
 stm32f103c8t6_balance-car\main.o: ../Balance/MPU6050/dmpmap.h
 stm32f103c8t6_balance-car\main.o: ../Hardware/ENCODER/encoder.h
 stm32f103c8t6_balance-car\main.o: ../Balance/CONTROL/control.h
-stm32f103c8t6_balance-car\main.o: ..\Hardware\BSTP\usart3.h
+stm32f103c8t6_balance-car\main.o: ../Hardware/BSTP/usart3.h
 stm32f103c8t6_balance-car\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 stm32f103c8t6_balance-car\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 stm32f103c8t6_balance-car\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h

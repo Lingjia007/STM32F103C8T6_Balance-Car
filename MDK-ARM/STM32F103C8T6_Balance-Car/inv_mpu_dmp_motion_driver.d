@@ -22,6 +22,8 @@ stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
@@ -31,6 +33,7 @@ stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Core/Inc/main.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Core/Inc/tim.h
+stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Core/Inc/adc.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Core/Inc/usart.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../System/sys.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
@@ -48,6 +51,6 @@ stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Balance/MPU6050/dmpKey
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Balance/MPU6050/dmpmap.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Hardware/ENCODER/encoder.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Balance/CONTROL/control.h
-stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ..\Hardware\BSTP\usart3.h
+stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Hardware/BSTP/usart3.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

@@ -115,6 +115,7 @@ extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd;
 
 #include "main.h"
 #include "tim.h"
+#include "adc.h"
 #include "usart.h"
 #include "gpio.h"
 #include "delay.h"
