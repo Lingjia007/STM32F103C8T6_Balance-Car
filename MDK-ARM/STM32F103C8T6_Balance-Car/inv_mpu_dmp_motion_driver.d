@@ -39,6 +39,7 @@ stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../System/sys.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Core/Inc/gpio.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../System/delay.h
+stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ..\Hardware\LED\led.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Hardware/OLED/oled_hal.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32f103c8t6_balance-car\inv_mpu_dmp_motion_driver.o: ../Balance/MPU6050/DataScope_DP.h

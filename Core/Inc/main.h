@@ -57,6 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BSP_LED_Pin GPIO_PIN_13
+#define BSP_LED_GPIO_Port GPIOC
 #define MPU6050_EXTI_Pin GPIO_PIN_12
 #define MPU6050_EXTI_GPIO_Port GPIOA
 #define MPU6050_EXTI_EXTI_IRQn EXTI15_10_IRQn

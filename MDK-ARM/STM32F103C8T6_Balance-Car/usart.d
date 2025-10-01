@@ -39,6 +39,7 @@ stm32f103c8t6_balance-car\usart.o: ../Core/Inc/usart.h
 stm32f103c8t6_balance-car\usart.o: ../Core/Inc/gpio.h
 stm32f103c8t6_balance-car\usart.o: ../System/delay.h
 stm32f103c8t6_balance-car\usart.o: ../System/sys.h
+stm32f103c8t6_balance-car\usart.o: ..\Hardware\LED\led.h
 stm32f103c8t6_balance-car\usart.o: ../Hardware/OLED/oled_hal.h
 stm32f103c8t6_balance-car\usart.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
 stm32f103c8t6_balance-car\usart.o: ../Balance/MPU6050/DataScope_DP.h
