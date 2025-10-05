@@ -40,7 +40,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		Flag_Target = !Flag_Target;
 		Get_Angle(Way_Angle);									// 更新姿态，5ms一次，更高的采样频率可以改善卡尔曼滤波和互补滤波的效果
 		Encoder_Left = -Read_Encoder(3);						// 读取左轮编码器的值，前进为正，后退为负
-		Encoder_Right = -Read_Encoder(4);						// 读取右轮编码器的值，前进为正，后退为负
+		Encoder_Right = +Read_Encoder(4);						// 读取右轮编码器的值，前进为正，后退为负
 																// 左轮A相接TIM2_CH1,右轮A相接TIM4_CH2,故这里两个编码器的极性相同
 		Get_Velocity_Form_Encoder(Encoder_Left, Encoder_Right); // 编码器读数转速度（mm/s）
 

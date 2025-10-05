@@ -49,7 +49,7 @@ u8 PID_Send;                                                                    
 u8 Flag_follow = 0, Flag_avoid = 0;                                                                              // 超声波跟随、超声波壁障标志位
 float Acceleration_Z;                                                                                            // Z轴加速度计
 volatile u8 delay_flag, delay_50;                                                                                // 提供延时的变量
-float Balance_Kp = 25500, Balance_Kd = 135, Velocity_Kp = 16000, Velocity_Ki = 80, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
+float Balance_Kp = 25500, Balance_Kd = 138, Velocity_Kp = 416, Velocity_Ki = 2.08, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -120,14 +120,17 @@ int main(void)
   OLED_HAL_Init(); // 初始化OLED
   OLED_HAL_Clear();
   delay_init();
-  // MPU6050_initialize(); // MPU6050初始化
-  // DMP_Init();           // 初始化DMP
+  MPU6050_initialize(); // MPU6050初始化
+  DMP_Init();           // 初始化DMP
 
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
 
   HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_2);
+
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+  HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -137,19 +140,19 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    // OLED_HAL_ShowString(0, 0, (uint8_t *)"ABC", 8, 1);   // 6*8 “ABC”
-    // OLED_HAL_ShowString(0, 8, (uint8_t *)"DEF", 12, 1);  // 6*12 “ABC”
-    // OLED_HAL_ShowString(0, 20, (uint8_t *)"GHI", 16, 1); // 8*16 “ABC”
-    // OLED_HAL_ShowString(0, 36, (uint8_t *)"JKL", 24, 1); // 12*24 “ABC”
-    // OLED_HAL_Refresh();
+    OLED_HAL_ShowString(0, 0, (uint8_t *)"ABC", 8, 1);   // 6*8 “ABC”
+    OLED_HAL_ShowString(0, 8, (uint8_t *)"DEF", 12, 1);  // 6*12 “ABC”
+    OLED_HAL_ShowString(0, 20, (uint8_t *)"GHI", 16, 1); // 8*16 “ABC”
+    OLED_HAL_ShowString(0, 36, (uint8_t *)"JKL", 24, 1); // 12*24 “ABC”
+    OLED_HAL_Refresh();
     // printf("OLED_HAL_ShowString\r\n");
     // char voltage_str[20];
     // Voltage = GetADC_Power() * 330 * 10.97 / 4096;
     // sprintf(voltage_str, "%d\r\n", Voltage);
     // HAL_UART_Transmit(&huart3, (uint8_t *)voltage_str, strlen(voltage_str), 1000);
-    printf("count %d\r\n", __HAL_TIM_GetCounter(&htim2));
-    LED_Toggle();
-    delay_ms(500);
+    // printf("count %d\r\n", __HAL_TIM_GetCounter(&htim2));
+    // LED_Toggle();
+    // delay_ms(500);
   }
   /* USER CODE END 3 */
 }
