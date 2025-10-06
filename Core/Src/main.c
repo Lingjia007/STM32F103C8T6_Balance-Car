@@ -49,7 +49,7 @@ u8 PID_Send;                                                                    
 u8 Flag_follow = 0, Flag_avoid = 0;                                                                              // 超声波跟随、超声波壁障标志位
 float Acceleration_Z;                                                                                            // Z轴加速度计
 volatile u8 delay_flag, delay_50;                                                                                // 提供延时的变量
-float Balance_Kp = 25500, Balance_Kd = 138, Velocity_Kp = 416, Velocity_Ki = 2.08, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
+float Balance_Kp = 28500, Balance_Kd = 140, Velocity_Kp = 432, Velocity_Ki = 2.16, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/

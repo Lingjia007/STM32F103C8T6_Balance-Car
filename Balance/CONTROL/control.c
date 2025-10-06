@@ -66,7 +66,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		Balance_Pwm = Balance(Angle_Balance, Gyro_Balance);	  // 平衡PID控制 Gyro_Balance平衡角速度极性：前倾为正，后倾为负
 		Velocity_Pwm = Velocity(Encoder_Left, Encoder_Right); // 速度环PID控制	记住，速度反馈是正反馈，就是小车快的时候要慢下来就需要再跑快一点
 		Turn_Pwm =
-			Turn(Gyro_Turn); // 转向环PID控制
+			Turn(-Gyro_Turn); // 转向环PID控制
 
 		Motor_Left = Balance_Pwm + Velocity_Pwm + Turn_Pwm;	 // 计算左轮电机最终PWM
 		Motor_Right = Balance_Pwm + Velocity_Pwm - Turn_Pwm; // 计算右轮电机最终PWM
@@ -93,8 +93,18 @@ Output  : balance：Vertical control PWM
 int Balance(float Angle, float Gyro)
 {
 	float Angle_bias, Gyro_bias;
+	float Target_Angle = 0.0f; // 目标倾角，用于前进后退控制
 	int balance;
-	Angle_bias = Middle_angle - Angle; // 求出平衡的角度中值 和机械相关
+
+	// 根据前进后退信号设置目标倾角
+	if (1 == Flag_front)
+		Target_Angle = 10.0f; // 前进时目标倾角为-10度（向前倾斜）
+	else if (1 == Flag_back)
+		Target_Angle = -10.0f; // 后退时目标倾角为10度（向后倾斜）
+	else
+		Target_Angle = 0.0f; // 停止时目标倾角为0度
+
+	Angle_bias = Middle_angle - Angle + Target_Angle; // 求出平衡的角度中值，并加入目标倾角
 	Gyro_bias = 0 - Gyro;
 	balance = -Balance_Kp / 100 * Angle_bias - Gyro_bias * Balance_Kd / 100; // 计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数
 	return balance;
@@ -114,16 +124,8 @@ int Velocity(int encoder_left, int encoder_right)
 	static float velocity, Encoder_Least, Encoder_bias, Movement;
 	static float Encoder_Integral, Target_Velocity;
 	//================遥控前进后退部分====================//
-	if (Flag_follow == 1 || Flag_avoid == 1)
-		Target_Velocity = 30; // 如果进入跟随/避障模式,降低速度
-	else
-		Target_Velocity = 50;
-	if (Flag_front == 1)
-		Movement = Target_Velocity / Flag_velocity; // 收到前进信号
-	else if (Flag_back == 1)
-		Movement = -Target_Velocity / Flag_velocity; // 收到后退信号
-	else
-		Movement = Move_X;
+	// 前进后退已通过平衡倾角实现，此处直接使用Move_X
+	Movement = Move_X;
 
 	//=============超声波功能（跟随/避障）==================//
 	if (Mode == Ultrasonic_Follow_Mode && (Distance > 200 && Distance < 500) && Flag_Left != 1 && Flag_Right != 1) // 跟随
@@ -138,7 +140,7 @@ int Velocity(int encoder_left, int encoder_right)
 	Encoder_bias *= 0.86;								// 一阶低通滤波器
 	Encoder_bias += Encoder_Least * 0.14;				// 一阶低通滤波器，减缓速度变化
 	Encoder_Integral += Encoder_bias;					// 积分出位移 积分时间：10ms
-	Encoder_Integral = Encoder_Integral + Movement;		// 接收遥控器数据，控制前进后退
+	Encoder_Integral = Encoder_Integral;				// 接收遥控器数据，控制前进后退
 	if (Encoder_Integral > 10000)
 		Encoder_Integral = 10000; // 积分限幅
 	if (Encoder_Integral < -10000)
@@ -163,9 +165,9 @@ int Turn(float gyro)
 	float Kp = Turn_Kp, Kd; // 修改转向速度，请修改Turn_Amplitude即可
 	//===================遥控左右旋转部分=================//
 	if (1 == Flag_Left)
-		Turn_Target = -Turn_Amplitude / Flag_velocity;
-	else if (1 == Flag_Right)
 		Turn_Target = Turn_Amplitude / Flag_velocity;
+	else if (1 == Flag_Right)
+		Turn_Target = -Turn_Amplitude / Flag_velocity;
 	else
 		Turn_Target = 0;
 	if (1 == Flag_front || 1 == Flag_back)
