@@ -49,7 +49,7 @@ u32 Distance = 0;                                                               
 u8 PID_Send;                                                                                                     // 调参相关变量
 u8 Flag_follow = 0, Flag_avoid = 0;                                                                              // 超声波跟随、超声波壁障标志位
 float Acceleration_Z;                                                                                            // Z轴加速度计
-volatile u8 delay_flag, delay_50;                                                                                // 提供延时的变量
+volatile u8 delay_flag, delay_500;                                                                               // 提供延时的变量
 float Balance_Kp = 37500, Balance_Kd = 182, Velocity_Kp = 520, Velocity_Ki = 2.60, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
 /* USER CODE END PTD */
 

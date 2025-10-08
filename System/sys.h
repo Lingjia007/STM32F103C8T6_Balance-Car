@@ -105,7 +105,7 @@ extern u32 Distance;                                                            
 extern u8 PID_Send;                                                              // 调参相关变量
 extern u8 Flag_follow, Flag_avoid;                                               // 超声波跟随、超声波壁障标志位
 extern float Acceleration_Z;                                                     // Z轴加速度计
-extern volatile u8 delay_flag, delay_50;                                         // 提供延时的变量
+extern volatile u8 delay_flag, delay_500;                                        // 提供延时的变量
 extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd; // PID参数（放大100倍）
 //////////////////////////////////////////////////////////////////////////////
 // 以下为汇编函数

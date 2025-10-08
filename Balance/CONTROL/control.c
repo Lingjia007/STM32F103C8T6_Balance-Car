@@ -52,12 +52,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if (Voltage_Count == 100)
 				Voltage = Voltage_All / 100, Voltage_All = 0, Voltage_Count = 0; // 求平均值
 		} // 10ms控制一次
-		// if (delay_flag == 1)
-		// {
-		// 	delay_50++;
-		// 	if (delay_50 == 10)
-		// 		delay_50 = 0, delay_flag = 0, LD_Successful_Receive_flag = 0; // 给主函数提供50ms的精准延时，示波器需要50ms高精度延时
-		// } // 获取超声波测量距离值
+
+		delay_500++;
+		if (delay_500 == 100)
+		{
+			LED_Toggle();
+			delay_500 = 0;
+		}
+
+		// 获取超声波测量距离值
 		// //			if(Flag_follow==0&&Flag_avoid==0)	Led_Flash(100);   //LED闪烁;常规模式 1s改变一次指示灯的状态
 		// //			if(Flag_follow==1||Flag_avoid==1)	Led_Flash(0);     //LED常亮;超声波跟随/避障模式
 		// Key();												  // 扫描按键状态 单击双击可以改变小车运行状态
@@ -76,25 +79,25 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		int diff_value = (myabs(Motor_Left) + myabs(Motor_Right)) / 2 * 3 / 4;
 		if (Flag_front == 1 && Flag_Left == 1)
 		{
-			Motor_Left += diff_value;	// 左轮加动态值
+			Motor_Left += diff_value;  // 左轮加动态值
 			Motor_Right -= diff_value; // 右轮减动态值
 		}
 
 		else if (Flag_front == 1 && Flag_Right == 1)
 		{
-			Motor_Left -= diff_value;	// 左轮减动态值
+			Motor_Left -= diff_value;  // 左轮减动态值
 			Motor_Right += diff_value; // 右轮加动态值
 		}
 
 		else if (Flag_back == 1 && Flag_Left == 1)
 		{
-			Motor_Left -= diff_value;	// 左轮减动态值
+			Motor_Left -= diff_value;  // 左轮减动态值
 			Motor_Right += diff_value; // 右轮加动态值
 		}
 
 		else if (Flag_back == 1 && Flag_Right == 1)
 		{
-			Motor_Left += diff_value;	// 左轮加动态值
+			Motor_Left += diff_value;  // 左轮加动态值
 			Motor_Right -= diff_value; // 右轮减动态值
 		}
 
