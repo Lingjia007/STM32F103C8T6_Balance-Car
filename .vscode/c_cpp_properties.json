@@ -7,7 +7,6 @@
             "intelliSenseMode": "${default}",
             "includePath": [
                 "C:/Keil_v5/ARM/ARMCC/include",
-                "MDK-ARM/RTE/_STM32F103C8T6_Balance-Car",
                 "Core/Inc",
                 "Drivers/STM32F1xx_HAL_Driver/Inc",
                 "Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
@@ -26,8 +25,6 @@
             "defines": [
                 "USE_HAL_DRIVER",
                 "STM32F103xB",
-                "RTE_COMPONENTS_H",
-                "CMSIS_device_header=\"stm32f10x.h\"",
                 "__CC_ARM",
                 "__arm__",
                 "__align(x)=",

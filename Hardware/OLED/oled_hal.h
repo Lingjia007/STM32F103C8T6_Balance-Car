@@ -45,6 +45,10 @@ void OLED_HAL_Clear(void);
 void OLED_HAL_DrawPoint(u8 x, u8 y, u8 t);
 void OLED_HAL_ShowChar(u8 x, u8 y, u8 chr, u8 size1, u8 mode);
 void OLED_HAL_ShowString(u8 x, u8 y, u8 *chr, u8 size1, u8 mode);
+// 显示数字
+void OLED_HAL_ShowNumber(u8 x, u8 y, u32 num, u8 len, u8 size1);
+// 显示浮点数（两位小数）
+void OLED_HAL_ShowFloat(u8 x, u8 y, float num, u8 int_len, u8 size1);
 void OLED_HAL_Init(void);
 
 #endif

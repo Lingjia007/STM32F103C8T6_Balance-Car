@@ -43,6 +43,8 @@ stm32f103c8t6_balance-car\usart3.o: ../System/delay.h
 stm32f103c8t6_balance-car\usart3.o: ..\Hardware\LED\led.h
 stm32f103c8t6_balance-car\usart3.o: ../Hardware/OLED/oled_hal.h
 stm32f103c8t6_balance-car\usart3.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+stm32f103c8t6_balance-car\usart3.o: ../Hardware/OLED/oled_show.h
+stm32f103c8t6_balance-car\usart3.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 stm32f103c8t6_balance-car\usart3.o: ../Balance/MPU6050/DataScope_DP.h
 stm32f103c8t6_balance-car\usart3.o: ../Balance/MPU6050/filter.h
 stm32f103c8t6_balance-car\usart3.o: ../Balance/MPU6050/inv_mpu.h
@@ -54,5 +56,4 @@ stm32f103c8t6_balance-car\usart3.o: ../Balance/MPU6050/dmpmap.h
 stm32f103c8t6_balance-car\usart3.o: ../Hardware/ENCODER/encoder.h
 stm32f103c8t6_balance-car\usart3.o: ../Balance/CONTROL/control.h
 stm32f103c8t6_balance-car\usart3.o: ../Hardware/BSTP/usart3.h
-stm32f103c8t6_balance-car\usart3.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
 stm32f103c8t6_balance-car\usart3.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

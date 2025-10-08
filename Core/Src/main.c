@@ -35,8 +35,9 @@ u8 Way_Angle = 2;                                                               
 u8 Flag_front, Flag_back, Flag_Left, Flag_Right, Flag_velocity = 2;                                              // 蓝牙遥控相关的变量
 u8 Flag_Stop = 0, Flag_Show = 0;                                                                                 // 电机停止标志位和显示标志位  默认停止 显示打开
 int Motor_Left, Motor_Right;                                                                                     // 电机PWM变量 应是Motor的 向Moto致敬
+float Velocity_Left, Velocity_Right;                                                                             // 车轮速度(mm/s)
 float Temperature;                                                                                               // 温度变量
-float Voltage, Middle_angle = 1;                                                                                 // 电池电压采样相关的变量
+float Voltage, Middle_angle = 0.7;                                                                               // 电池电压采样相关的变量
 float Angle_Balance, Gyro_Balance, Gyro_Turn;                                                                    // 平衡倾角 平衡陀螺仪 转向陀螺仪
 u8 LD_Successful_Receive_flag;                                                                                   // 雷达成功接收数据标志位
 u8 Mode = 0;                                                                                                     // 模式选择，默认是普通的控制模式
@@ -44,7 +45,7 @@ u8 CCD_Zhongzhi, CCD_Yuzhi;                                                     
 u16 ADV[128] = {0};                                                                                              // 存放CCD的数据的数组
 u16 determine;                                                                                                   // 雷达跟随模式的一个标志位
 float Move_X, Move_Z;                                                                                            // 遥控控制的速度
-u32 Distance;                                                                                                    // 超声波测距
+u32 Distance = 0;                                                                                                // 超声波测距
 u8 PID_Send;                                                                                                     // 调参相关变量
 u8 Flag_follow = 0, Flag_avoid = 0;                                                                              // 超声波跟随、超声波壁障标志位
 float Acceleration_Z;                                                                                            // Z轴加速度计
@@ -140,11 +141,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    OLED_HAL_ShowString(0, 0, (uint8_t *)"ABC", 8, 1);   // 6*8 “ABC”
-    OLED_HAL_ShowString(0, 8, (uint8_t *)"DEF", 12, 1);  // 6*12 “ABC”
-    OLED_HAL_ShowString(0, 20, (uint8_t *)"GHI", 16, 1); // 8*16 “ABC”
-    OLED_HAL_ShowString(0, 36, (uint8_t *)"JKL", 24, 1); // 12*24 “ABC”
-    OLED_HAL_Refresh();
+    OLED_Show();
     // printf("OLED_HAL_ShowString\r\n");
     // char voltage_str[20];
     // Voltage = GetADC_Power() * 330 * 10.97 / 4096;

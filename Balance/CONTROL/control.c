@@ -18,7 +18,6 @@ All rights reserved
 ***********************************************/
 #include "control.h"
 int Sensor_Left, Sensor_Middle, Sensor_Right, Sensor;
-float Velocity_Left, Velocity_Right; // 车轮速度(mm/s)
 /**************************************************************************
 Function: Control function
 Input   : none
@@ -44,15 +43,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 																// 左轮A相接TIM2_CH1,右轮A相接TIM4_CH2,故这里两个编码器的极性相同
 		Get_Velocity_Form_Encoder(Encoder_Left, Encoder_Right); // 编码器读数转速度（mm/s）
 
-		// if (Flag_Target == 1) // 10ms控制一次
-		// {
+		if (Flag_Target == 1) // 10ms控制一次
+		{
 
-		// 	Voltage_Temp = Get_battery_volt(); // 读取电池电压
-		// 	Voltage_Count++;				   // 平均值计数器
-		// 	Voltage_All += Voltage_Temp;	   // 多次采样累积
-		// 	if (Voltage_Count == 100)
-		// 		Voltage = Voltage_All / 100, Voltage_All = 0, Voltage_Count = 0; // 求平均值
-		// } // 10ms控制一次
+			Voltage_Temp = GetADC_Power() * 330 * 10.97 / 4096; // 读取电池电压
+			Voltage_Count++;									// 平均值计数器
+			Voltage_All += Voltage_Temp;						// 多次采样累积
+			if (Voltage_Count == 100)
+				Voltage = Voltage_All / 100, Voltage_All = 0, Voltage_Count = 0; // 求平均值
+		} // 10ms控制一次
 		// if (delay_flag == 1)
 		// {
 		// 	delay_50++;

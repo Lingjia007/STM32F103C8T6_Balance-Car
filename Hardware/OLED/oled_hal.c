@@ -151,6 +151,74 @@ void OLED_HAL_ShowString(u8 x, u8 y, u8 *chr, u8 size1, u8 mode)
     }
 }
 
+// 计算10的幂次方
+static u32 OLED_Pow(u8 m, u8 n)
+{
+    u32 result = 1;
+    while (n--)
+        result *= m;
+    return result;
+}
+
+// 显示数字
+// x,y:起始坐标
+// num:要显示的数字
+// len:数字的位数
+// size1:字体大小
+void OLED_HAL_ShowNumber(u8 x, u8 y, u32 num, u8 len, u8 size1)
+{
+    u8 t, temp;
+    u8 enshow = 0;
+    
+    for (t = 0; t < len; t++)
+    {
+        temp = (num / OLED_Pow(10, len - t - 1)) % 10;
+        if (enshow == 0 && t < (len - 1))
+        {
+            if (temp == 0)
+            {
+                OLED_HAL_ShowChar(x + (size1 / 2) * t, y, ' ', size1, 1);
+                continue;
+            }
+            else
+                enshow = 1;
+        }
+        OLED_HAL_ShowChar(x + (size1 / 2) * t, y, temp + '0', size1, 1);
+    }
+}
+
+// 显示浮点数（两位小数）
+// x,y:起始坐标
+// num:要显示的浮点数
+// int_len:整数部分的位数
+// size1:字体大小
+void OLED_HAL_ShowFloat(u8 x, u8 y, float num, u8 int_len, u8 size1)
+{
+    int integer_part;
+    int decimal_part;
+    
+    // 处理负数
+    if (num < 0)
+    {
+        OLED_HAL_ShowChar(x, y, '-', size1, 1);
+        num = -num;
+        x += size1 / 2; // 移动位置给负号留空间
+    }
+    
+    // 提取整数部分和小数部分
+    integer_part = (int)num;
+    decimal_part = (int)((num - integer_part) * 100 + 0.5); // 四舍五入到两位小数
+    
+    // 显示整数部分
+    OLED_HAL_ShowNumber(x, y, integer_part, int_len, size1);
+    
+    // 显示小数点
+    OLED_HAL_ShowChar(x + (size1 / 2) * int_len, y, '.', size1, 1);
+    
+    // 显示小数部分（两位）
+    OLED_HAL_ShowNumber(x + (size1 / 2) * (int_len + 1), y, decimal_part, 2, size1);
+}
+
 // OLED初始化
 void OLED_HAL_Init(void)
 {

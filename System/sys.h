@@ -92,6 +92,7 @@ extern u8 Way_Angle;                                                   // 获取角
 extern u8 Flag_front, Flag_back, Flag_Left, Flag_Right, Flag_velocity; // 蓝牙遥控相关的变量
 extern u8 Flag_Stop, Flag_Show;                                        // 电机停止标志位和显示标志位  默认停止 显示打开
 extern int Motor_Left, Motor_Right;                                    // 电机PWM变量 应是Motor的 向Moto致敬
+extern float Velocity_Left, Velocity_Right;                            // 左右轮速度变量
 extern float Temperature;                                              // 温度变量
 extern float Voltage, Middle_angle;                                    // 电池电压采样相关的变量
 extern u8 Mode, CCD_Zhongzhi, CCD_Yuzhi, Lidar_Detect;                 // 模式选择，默认是普通的控制模式
@@ -121,6 +122,7 @@ extern float Balance_Kp, Balance_Kd, Velocity_Kp, Velocity_Ki, Turn_Kp, Turn_Kd;
 #include "delay.h"
 #include "led.h"
 #include "oled_hal.h"
+#include "oled_show.h"
 #include "DataScope_DP.h"
 #include "filter.h"
 #include "inv_mpu.h"

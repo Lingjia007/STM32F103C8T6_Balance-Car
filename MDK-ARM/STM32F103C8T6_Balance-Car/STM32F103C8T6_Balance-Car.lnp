@@ -31,6 +31,7 @@
 "stm32f103c8t6_balance-car\encoder.o"
 "stm32f103c8t6_balance-car\usart3.o"
 "stm32f103c8t6_balance-car\led.o"
+"stm32f103c8t6_balance-car\oled_show.o"
 "stm32f103c8t6_balance-car\sys.o"
 "stm32f103c8t6_balance-car\delay.o"
 "stm32f103c8t6_balance-car\datascope_dp.o"
