@@ -98,9 +98,9 @@ int Balance(float Angle, float Gyro)
 
 	// 根据前进后退信号设置目标倾角
 	if (1 == Flag_front)
-		Target_Angle = 10.0f; // 前进时目标倾角为-10度（向前倾斜）
+		Target_Angle = 8.0f; // 前进时目标倾角为-10度（向前倾斜）
 	else if (1 == Flag_back)
-		Target_Angle = -10.0f; // 后退时目标倾角为10度（向后倾斜）
+		Target_Angle = -8.0f; // 后退时目标倾角为10度（向后倾斜）
 	else
 		Target_Angle = 0.0f; // 停止时目标倾角为0度
 

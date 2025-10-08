@@ -36,7 +36,7 @@ u8 Flag_front, Flag_back, Flag_Left, Flag_Right, Flag_velocity = 2;             
 u8 Flag_Stop = 0, Flag_Show = 0;                                                                                 // 电机停止标志位和显示标志位  默认停止 显示打开
 int Motor_Left, Motor_Right;                                                                                     // 电机PWM变量 应是Motor的 向Moto致敬
 float Temperature;                                                                                               // 温度变量
-int Voltage, Middle_angle;                                                                                       // 电池电压采样相关的变量
+float Voltage, Middle_angle = 1;                                                                                 // 电池电压采样相关的变量
 float Angle_Balance, Gyro_Balance, Gyro_Turn;                                                                    // 平衡倾角 平衡陀螺仪 转向陀螺仪
 u8 LD_Successful_Receive_flag;                                                                                   // 雷达成功接收数据标志位
 u8 Mode = 0;                                                                                                     // 模式选择，默认是普通的控制模式
@@ -49,7 +49,7 @@ u8 PID_Send;                                                                    
 u8 Flag_follow = 0, Flag_avoid = 0;                                                                              // 超声波跟随、超声波壁障标志位
 float Acceleration_Z;                                                                                            // Z轴加速度计
 volatile u8 delay_flag, delay_50;                                                                                // 提供延时的变量
-float Balance_Kp = 28500, Balance_Kd = 140, Velocity_Kp = 432, Velocity_Ki = 2.16, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
+float Balance_Kp = 37500, Balance_Kd = 182, Velocity_Kp = 520, Velocity_Ki = 2.60, Turn_Kp = 4200, Turn_Kd = 60; // PID参数（放大100倍）
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/

@@ -93,7 +93,7 @@ extern u8 Flag_front, Flag_back, Flag_Left, Flag_Right, Flag_velocity; // 蓝牙遥
 extern u8 Flag_Stop, Flag_Show;                                        // 电机停止标志位和显示标志位  默认停止 显示打开
 extern int Motor_Left, Motor_Right;                                    // 电机PWM变量 应是Motor的 向Moto致敬
 extern float Temperature;                                              // 温度变量
-extern int Voltage, Middle_angle;                                      // 电池电压采样相关的变量
+extern float Voltage, Middle_angle;                                    // 电池电压采样相关的变量
 extern u8 Mode, CCD_Zhongzhi, CCD_Yuzhi, Lidar_Detect;                 // 模式选择，默认是普通的控制模式
 extern u16 ADV[128];
 extern u16 determine; // 雷达跟随模式的一个标志位
