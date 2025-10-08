@@ -46,12 +46,20 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle) // 接收回调函数
 				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 刹车
 			else if (uart_receive == 0x41)
 				Flag_front = 1, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 前
+			else if (uart_receive == 0x43)
+				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 1; // 右自转
 			else if (uart_receive == 0x45)
 				Flag_front = 0, Flag_back = 1, Flag_Left = 0, Flag_Right = 0; // 后
-			else if (uart_receive == 0x42 || uart_receive == 0x43 || uart_receive == 0x44)
-				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 1; // 右
-			else if (uart_receive == 0x46 || uart_receive == 0x47 || uart_receive == 0x48)
-				Flag_front = 0, Flag_back = 0, Flag_Left = 1, Flag_Right = 0; // 左
+			else if (uart_receive == 0x47)
+				Flag_front = 0, Flag_back = 0, Flag_Left = 1, Flag_Right = 0; // 左自转
+			else if (uart_receive == 0x48)
+				Flag_front = 1, Flag_back = 0, Flag_Left = 1, Flag_Right = 0; // 前进+差速左转
+			else if (uart_receive == 0x44)
+				Flag_front = 0, Flag_back = 1, Flag_Left = 0, Flag_Right = 1; // 后退+差速右转
+			else if (uart_receive == 0x42)
+				Flag_front = 1, Flag_back = 0, Flag_Left = 0, Flag_Right = 1; // 前进+差速右转
+			else if (uart_receive == 0x46)
+				Flag_front = 0, Flag_back = 1, Flag_Left = 1, Flag_Right = 0; // 后退+差速左转
 			else
 				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 刹车
 		}
@@ -62,12 +70,20 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle) // 接收回调函数
 				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 刹车
 			else if (uart_receive == 0x01)
 				Flag_front = 1, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 前
+			else if (uart_receive == 0x03)
+				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 1; // 右自转
 			else if (uart_receive == 0x05)
 				Flag_front = 0, Flag_back = 1, Flag_Left = 0, Flag_Right = 0; // 后
-			else if (uart_receive == 0x02 || uart_receive == 0x03 || uart_receive == 0x04)
-				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 1;			   // 左
-			else if (uart_receive == 0x06 || uart_receive == 0x07 || uart_receive == 0x08) // 右
-				Flag_front = 0, Flag_back = 0, Flag_Left = 1, Flag_Right = 0;
+			else if (uart_receive == 0x07)
+				Flag_front = 0, Flag_back = 0, Flag_Left = 1, Flag_Right = 0; // 左自转
+			else if (uart_receive == 0x02)
+				Flag_front = 1, Flag_back = 0, Flag_Left = 1, Flag_Right = 0; // 前进+差速左转
+			else if (uart_receive == 0x04)
+				Flag_front = 0, Flag_back = 1, Flag_Left = 0, Flag_Right = 1; // 后退+差速右转
+			else if (uart_receive == 0x06)
+				Flag_front = 1, Flag_back = 0, Flag_Left = 0, Flag_Right = 1; // 前进+差速右转
+			else if (uart_receive == 0x08)
+				Flag_front = 0, Flag_back = 1, Flag_Left = 1, Flag_Right = 0; // 后退+差速左转
 			else
 				Flag_front = 0, Flag_back = 0, Flag_Left = 0, Flag_Right = 0; // 刹车
 		}

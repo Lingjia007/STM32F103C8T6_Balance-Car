@@ -67,9 +67,37 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		Turn_Pwm =
 			Turn(-Gyro_Turn); // 转向环PID控制
 
-		Motor_Left = Balance_Pwm + Velocity_Pwm + Turn_Pwm;	 // 计算左轮电机最终PWM
-		Motor_Right = Balance_Pwm + Velocity_Pwm - Turn_Pwm; // 计算右轮电机最终PWM
-															 // PWM值正数使小车前进，负数使小车后退
+		// 计算基础PWM值
+		Motor_Left = Balance_Pwm + Velocity_Pwm + Turn_Pwm;
+		Motor_Right = Balance_Pwm + Velocity_Pwm - Turn_Pwm;
+
+		// 针对特殊命令的差速调整
+		// 根据当前左右轮PWM绝对值相加后的平均值再乘以3/4计算差速调整值
+		int diff_value = (myabs(Motor_Left) + myabs(Motor_Right)) / 2 * 3 / 4;
+		if (Flag_front == 1 && Flag_Left == 1)
+		{
+			Motor_Left += diff_value;	// 左轮加动态值
+			Motor_Right -= diff_value; // 右轮减动态值
+		}
+
+		else if (Flag_front == 1 && Flag_Right == 1)
+		{
+			Motor_Left -= diff_value;	// 左轮减动态值
+			Motor_Right += diff_value; // 右轮加动态值
+		}
+
+		else if (Flag_back == 1 && Flag_Left == 1)
+		{
+			Motor_Left -= diff_value;	// 左轮减动态值
+			Motor_Right += diff_value; // 右轮加动态值
+		}
+
+		else if (Flag_back == 1 && Flag_Right == 1)
+		{
+			Motor_Left += diff_value;	// 左轮加动态值
+			Motor_Right -= diff_value; // 右轮减动态值
+		}
+
 		Motor_Left = PWM_Limit(Motor_Left, 6900, -6900);
 		Motor_Right = PWM_Limit(Motor_Right, 6900, -6900); // PWM限幅
 														   // if (Pick_Up(Acceleration_Z, Angle_Balance, Encoder_Left, Encoder_Right)) // 检查是否小车被拿起
@@ -97,9 +125,15 @@ int Balance(float Angle, float Gyro)
 
 	// 根据前进后退信号设置目标倾角
 	if (1 == Flag_front)
-		Target_Angle = 8.0f; // 前进时目标倾角为-10度（向前倾斜）
+	{
+		// 前进时目标倾角为8度（向前倾斜）
+		Target_Angle = 8.0f;
+	}
 	else if (1 == Flag_back)
-		Target_Angle = -8.0f; // 后退时目标倾角为10度（向后倾斜）
+	{
+		// 后退时目标倾角为-8度（向后倾斜）
+		Target_Angle = -8.0f;
+	}
 	else
 		Target_Angle = 0.0f; // 停止时目标倾角为0度
 
@@ -161,21 +195,30 @@ Output  : Turn control PWM
 int Turn(float gyro)
 {
 	static float Turn_Target, turn, Turn_Amplitude = 54;
-	float Kp = Turn_Kp, Kd; // 修改转向速度，请修改Turn_Amplitude即可
+	float Kp = Turn_Kp, Kd;
 	//===================遥控左右旋转部分=================//
-	if (1 == Flag_Left)
+	if (1 == Flag_Left && 0 == Flag_front && 0 == Flag_back)
+	{
+		// 单独左转时使用常规控制
 		Turn_Target = Turn_Amplitude / Flag_velocity;
-	else if (1 == Flag_Right)
+	}
+	else if (1 == Flag_Right && 0 == Flag_front && 0 == Flag_back)
+	{
+		// 单独右转时使用常规控制
 		Turn_Target = -Turn_Amplitude / Flag_velocity;
+	}
 	else
 		Turn_Target = 0;
+
+	// 转向环参数设置
 	if (1 == Flag_front || 1 == Flag_back)
 		Kd = Turn_Kd;
 	else
-		Kd = 0; // 转向的时候取消陀螺仪的纠正 有点模糊PID的思想
+		Kd = 0;
+
 	//===================转向PD控制器=================//
-	turn = Turn_Target * Kp / 100 + gyro * Kd / 100 + Move_Z; // 结合Z轴陀螺仪进行PD控制
-	return turn;											  // 转向环PWM右转为正，左转为负
+	turn = Turn_Target * Kp / 100 + gyro * Kd / 100 + Move_Z;
+	return turn;
 }
 
 /**************************************************************************
