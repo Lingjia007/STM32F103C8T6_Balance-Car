@@ -28,7 +28,7 @@ int Read_Encoder(TIM_HandleTypeDef *htim)
 	int Encoder_TIM;
 
 	// 读取计数器当前值并清零
-	Encoder_TIM = (short)__HAL_TIM_GET_COUNTER(htim);
+	Encoder_TIM = (int16_t)__HAL_TIM_GET_COUNTER(htim);
 	__HAL_TIM_SET_COUNTER(htim, 0);
 
 	return Encoder_TIM;

@@ -449,5 +449,456 @@
             "-o",
             "build/STM32F103C8T6_Balance-Car/Balance/CONTROL/control.o"
         ]
+    },
+    {
+        "directory": "MDK-ARM",
+        "file": "MDK-ARM/startup_stm32f103xb.s",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "MDK-ARM/startup_stm32f103xb.s",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/MDK-ARM/startup_stm32f103xb.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/main.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/main.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/main.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/gpio.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/gpio.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/gpio.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/adc.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/adc.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/adc.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/spi.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/spi.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/spi.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/tim.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/tim.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/tim.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/usart.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/usart.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/usart.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/stm32f1xx_it.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/stm32f1xx_it.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/stm32f1xx_it.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/stm32f1xx_hal_msp.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/stm32f1xx_hal_msp.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/stm32f1xx_hal_msp.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+        ]
+    },
+    {
+        "directory": "Drivers/STM32F1xx_HAL_Driver/Src",
+        "file": "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+        ]
+    },
+    {
+        "directory": "Core/Src",
+        "file": "Core/Src/system_stm32f1xx.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Core/Src/system_stm32f1xx.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Core/Src/system_stm32f1xx.o"
+        ]
+    },
+    {
+        "directory": "Hardware/OLED",
+        "file": "Hardware/OLED/oled_hal.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/OLED/oled_hal.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/OLED/oled_hal.o"
+        ]
+    },
+    {
+        "directory": "Hardware/IIC",
+        "file": "Hardware/IIC/ioi2c.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/IIC/ioi2c.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/IIC/ioi2c.o"
+        ]
+    },
+    {
+        "directory": "Hardware/ENCODER",
+        "file": "Hardware/ENCODER/encoder.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/ENCODER/encoder.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/ENCODER/encoder.o"
+        ]
+    },
+    {
+        "directory": "Hardware/BSTP",
+        "file": "Hardware/BSTP/usart3.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/BSTP/usart3.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/BSTP/usart3.o"
+        ]
+    },
+    {
+        "directory": "Hardware/LED",
+        "file": "Hardware/LED/led.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/LED/led.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/LED/led.o"
+        ]
+    },
+    {
+        "directory": "Hardware/OLED",
+        "file": "Hardware/OLED/oled_show.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Hardware/OLED/oled_show.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Hardware/OLED/oled_show.o"
+        ]
+    },
+    {
+        "directory": "System",
+        "file": "System/sys.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "System/sys.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/System/sys.o"
+        ]
+    },
+    {
+        "directory": "System",
+        "file": "System/delay.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "System/delay.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/System/delay.o"
+        ]
+    },
+    {
+        "directory": "Balance/MPU6050",
+        "file": "Balance/MPU6050/DataScope_DP.C",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/MPU6050/DataScope_DP.C",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/MPU6050/DataScope_DP.o"
+        ]
+    },
+    {
+        "directory": "Balance/MPU6050",
+        "file": "Balance/MPU6050/filter.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/MPU6050/filter.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/MPU6050/filter.o"
+        ]
+    },
+    {
+        "directory": "Balance/MPU6050",
+        "file": "Balance/MPU6050/inv_mpu.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/MPU6050/inv_mpu.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/MPU6050/inv_mpu.o"
+        ]
+    },
+    {
+        "directory": "Balance/MPU6050",
+        "file": "Balance/MPU6050/inv_mpu_dmp_motion_driver.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/MPU6050/inv_mpu_dmp_motion_driver.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/MPU6050/inv_mpu_dmp_motion_driver.o"
+        ]
+    },
+    {
+        "directory": "Balance/MPU6050",
+        "file": "Balance/MPU6050/MPU6050.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/MPU6050/MPU6050.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/MPU6050/MPU6050.o"
+        ]
+    },
+    {
+        "directory": "Balance/CONTROL",
+        "file": "Balance/CONTROL/control.c",
+        "arguments": [
+            "C:/Keil_v5/ARM/ARMCC/bin/armcc.exe",
+            "-c",
+            "Balance/CONTROL/control.c",
+            "-o",
+            "build/STM32F103C8T6_Balance-Car/Balance/CONTROL/control.o"
+        ]
     }
 ]

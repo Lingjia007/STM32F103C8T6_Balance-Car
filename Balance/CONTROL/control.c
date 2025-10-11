@@ -123,24 +123,39 @@ Output  : balance：Vertical control PWM
 int Balance(float Angle, float Gyro)
 {
 	float Angle_bias, Gyro_bias;
-	float Target_Angle = 0.0f; // 目标倾角，用于前进后退控制
+	float Target_Angle = 0.0f;				  // 目标倾角，用于前进后退控制
+	static float Current_Target_Angle = 0.0f; // 当前实际使用的目标倾角，用于平滑过渡
+	float angle_diff;						  // 当前目标与最终目标的差值
+	float smooth_factor = 0.072f;			  // 平滑系数，可以根据需要调整（0~1）
 	int balance;
 
 	// 根据前进后退信号设置目标倾角
 	if (1 == Flag_front)
 	{
-		// 前进时目标倾角为8度（向前倾斜）
+		// 前进时目标倾角为8.0度（向前倾斜）
 		Target_Angle = 8.0f;
 	}
 	else if (1 == Flag_back)
 	{
-		// 后退时目标倾角为-8度（向后倾斜）
+		// 后退时目标倾角为-8.0度（向后倾斜）
 		Target_Angle = -8.0f;
 	}
 	else
 		Target_Angle = 0.0f; // 停止时目标倾角为0度
 
-	Angle_bias = Middle_angle - Angle + Target_Angle; // 求出平衡的角度中值，并加入目标倾角
+	// 实现基于角度的平滑过渡
+	angle_diff = Target_Angle - Current_Target_Angle;
+
+	// 基于角度差值进行平滑过渡，差值越大变化越快，差值越小变化越慢
+	Current_Target_Angle += angle_diff * smooth_factor;
+
+	// 可以添加一个小的死区，当差值很小时直接跳转到目标值
+	if (myabs(angle_diff) < 0.1f)
+	{
+		Current_Target_Angle = Target_Angle;
+	}
+
+	Angle_bias = Middle_angle - Angle + Current_Target_Angle; // 求出平衡的角度中值，并加入当前目标倾角
 	Gyro_bias = 0 - Gyro;
 	balance = -Balance_Kp / 100 * Angle_bias - Gyro_bias * Balance_Kd / 100; // 计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数
 	return balance;
